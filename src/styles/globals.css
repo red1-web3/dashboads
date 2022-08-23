@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-300;
+}
+
+.width-trans {
+  animation: width 200ms linear;
+}
+.logo-text {
+  background: #f5f5f5;
+  background: -webkit-linear-gradient(to right, #f5f5f5 21%, #ffffff 77%);
+  background: -moz-linear-gradient(to right, #f5f5f5 21%, #ffffff 77%);
+  background: linear-gradient(to right, #f5f5f5 21%, #ffffff 77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.liElement:hover > button {
+  @apply text-white/70;
+}
+
+.box-shadow-dash2 {
+  box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+}
+.topChart:hover .box-shadow-dash2 {
+  box-shadow: 0 5px 15px rgb(0 0 0 / 15%);
+}
+.__pElement {
+  @apply py-6 px-6 text-xl capitalize text-black/40 font-semibold border-b border-[rgba(0,0,0,0.2)];
+}
+.__parentStyle {
+  @apply bg-white rounded-xl box-shadow-dash2 overflow-hidden;
+}
+#customers {
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f251;
+}
+
+#customers tr:hover {
+  background-color: rgba(221, 221, 221, 0.285);
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 20px;
+  text-align: left;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.625);
+}
